@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1570.948" height="1798.047" viewBox="0 0 1570.948 1798.047">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_1" data-name="Path 1" d="M1553.38,1292.728l-316.275-182.695V697.2L1553.38,514.445a45.209,45.209,0,0,0,0-78.262L816.275,10.887a60.031,60.031,0,0,0-51.6,0l-737.1,425.3A45.209,45.209,0,0,0,5,475.314v856.607a45.332,45.332,0,0,0,22.573,39.131l737.1,425.854a45.087,45.087,0,0,0,22.573,6.2H793.7a45.269,45.269,0,0,0,22.573-6.2l737.105-425.544a45.271,45.271,0,0,0,0-78.325ZM440.838,1106.684V700.675L790.476,498.817,1146.5,704.333V1102.9L790.476,1308.417Zm-90.6-403.095v400.3L95.417,1251.178V556.615ZM1440.389,475.314,1189.478,620.242,838.848,417.888V128.032ZM742.105,128.032V421.609L394.824,622.1,140.564,475.314ZM140.564,1331.8l254.26-146.788L742.105,1385.5v293.577Zm698.284,347.282V1389.346l350.63-202.354,250.911,144.8Z" transform="translate(-5 -5.061)" fill="rgba(0,0,0,0)"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_2" data-name="Rectangle 2" width="1632.967" height="1859.941" fill="rgba(0,0,0,0)"/>
+    </clipPath>
+  </defs>
+  <g id="ClarityLogo_Icon_Colour" opacity="0.02" clip-path="url(#clip-path)">
+    <g id="Group_1" data-name="Group 1" transform="translate(-31.007 -31.383)" clip-path="url(#clip-path-2)">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="1634.208" height="1860.437" transform="translate(-0.868 -0.186)" fill="#101031"/>
+    </g>
+  </g>
+</svg>
