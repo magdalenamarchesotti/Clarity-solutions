@@ -55,3 +55,28 @@
 }
 
 
+@media (max-width: 412px) {
+    .menu.menuActive {
+        display: block;
+        animation: showResponsiveMenu 350ms ease-in-out both;
+    }
+    .divLogo.hide {
+        opacity: 0;
+    }
+    .navBar.active {
+        background-color: #101031;
+    }
+    .responsiveButtonClose.active {
+        display: block;
+    }
+}
+
+@keyframes showResponsiveMenu {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
