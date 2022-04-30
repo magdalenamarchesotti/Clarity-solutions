@@ -1292,6 +1292,50 @@ Ensure the default browser behavior of the `hidden` attribute.
     justify-items: center;
     width: 356px;
   }
+
+  .grid1 {
+    grid-area: grid1;
+  }
+
+  .grid2 {
+    grid-area: grid2;
+  }
+
+  .grid3 {
+    grid-area: grid3;
+  }
+
+  .grid4 {
+    grid-area: grid4;
+  }
+
+  .grid5 {
+    grid-area: grid5;
+  }
+
+  .grid6 {
+    grid-area: grid6;
+  }
+
+  .grid7 {
+    grid-area: grid7;
+  }
+
+  .grid8 {
+    grid-area: grid8;
+  }
+
+  .grid9 {
+    grid-area: grid9;
+  }
+
+  .grid10 {
+    grid-area: grid10;
+  }
+
+  .grid11 {
+    grid-area: grid11;
+  }
 }
 
 @-webkit-keyframes showResponsiveMenu {
@@ -1313,112 +1357,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     opacity: 1;
   }
 }
-
-/*.container {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(3, auto);
-    grid-column-gap: 32px;
-    grid-row-gap: 64px;
-    grid-template-areas: 
-        "grid1 grid2 grid3 none"
-        "grid4 grid5 grid6 grid7"
-        "grid8 grid9 grid10 grid11";
-    justify-items: center;
-    width: 1172px;
-    margin-left: 322px;
-}
-
-.team-card1 {
-    width: 293px;
-    height: 402px;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(1, auto);
-    grid-column-gap: 32px;
-    grid-template-areas: 
-        "grid1 grid2 grid3 none";
-    justify-items: center;
-    width: 229px;
-    margin-left: 322px;
-    margin-bottom: 32px;
-} 
-
-.grid1 {
-    grid-area: grid1;
-}
-
-.grid2 {
-    grid-area: grid2;
-}
-
-.grid3 {
-    grid-area: grid3;
-}
-
-.grid4 {
-    grid-area: grid4;
-}
-
-.grid5 {
-    grid-area: grid5;
-}
-
-.grid6 {
-    grid-area: grid6;
-}
-
-.grid7 {
-    grid-area: grid7;
-}
-
-.grid8 {
-    grid-area: grid8;
-}
-
-.grid9 {
-    grid-area: grid9;
-}
-
-.grid10 {
-    grid-area: grid10;
-}
-
-.grid11 {
-    grid-area: grid11;
-} 
-
-@media only screen and (max-width: 412px) {
-    .team-card1 {
-        width: 178px;
-        height: 263px;
-    }
-
-    .team-card1 img {
-        width: 176px;
-        height: 170px;
-    }
-
-    .container {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(6, auto);
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;
-    grid-template-areas: 
-        "grid1 grid2"
-        "grid3 grid4"
-        "grid5 grid6"
-        "grid7 grid8"
-        "grid9 grid10"
-        "grid11 none";
-    justify-items: center;
-    width: 356px;
-    }
-}*/
 
 .after\:absolute::after {
   content: var(--tw-content);
