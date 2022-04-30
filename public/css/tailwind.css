@@ -468,6 +468,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
 .pointer-events-none {
   pointer-events: none;
 }
@@ -664,10 +668,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 8rem;
 }
 
-.mt-1 {
-  margin-top: 0.25rem;
-}
-
 .flex {
   display: flex;
 }
@@ -720,12 +720,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 263px;
 }
 
-.h-\[402px\] {
-  height: 402px;
-}
-
 .h-\[111px\] {
   height: 111px;
+}
+
+.h-\[402px\] {
+  height: 402px;
 }
 
 .h-\[445px\] {
@@ -742,10 +742,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[1104px\] {
   height: 1104px;
-}
-
-.h-full {
-  height: 100%;
 }
 
 .w-\[235px\] {
@@ -808,20 +804,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 80%;
 }
 
-.w-\[300px\] {
-  width: 300px;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .grid-rows-2 {
@@ -871,15 +859,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .gap-x-8 {
   -moz-column-gap: 2rem;
        column-gap: 2rem;
-}
-
-.gap-y-10 {
-  row-gap: 2.5rem;
-}
-
-.gap-x-6 {
-  -moz-column-gap: 1.5rem;
-       column-gap: 1.5rem;
 }
 
 .overflow-hidden {
@@ -954,21 +933,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(16 16 49 / var(--tw-bg-opacity));
 }
 
-.bg-gray-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}
-
 .bg-\[url\(\.\.\/images\/main-header-image\.svg\)\] {
   background-image: url(../images/main-header-image.svg);
 }
 
-.bg-none {
-  background-image: none;
-}
-
 .bg-\[url\(\.\.\/images\/ClarityLogo_Icon_Colour\.svg\)\] {
   background-image: url(../images/ClarityLogo_Icon_Colour.svg);
+}
+
+.bg-none {
+  background-image: none;
 }
 
 .bg-\[url\(\'\.\.\/images\/background-values\.svg\'\)\] {
@@ -977,30 +951,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-\[left_983px_top_-130px\] {
   background-position: left 983px top -130px;
-}
-
-.bg-\[left_-280px_top_283px\] {
-  background-position: left -280px top 283px;
-}
-
-.bg-\[left_972px_bottom_470px\] {
-  background-position: left 972px bottom 470px;
-}
-
-.bg-\[right_-625px_bottom_-350px\] {
-  background-position: right -625px bottom -350px;
-}
-
-.bg-\[left_0_bottom_0\] {
-  background-position: left 0 bottom 0;
-}
-
-.bg-\[left_-311px_top_255px\] {
-  background-position: left -311px top 255px;
-}
-
-.bg-\[left_-275px_top_266px\] {
-  background-position: left -275px top 266px;
 }
 
 .bg-\[right_-622px_bottom_480px\] {
@@ -1013,16 +963,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-no-repeat {
   background-repeat: no-repeat;
-}
-
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.object-center {
-  -o-object-position: center;
-     object-position: center;
 }
 
 .p-6 {
@@ -1162,10 +1102,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 700;
 }
 
-.font-medium {
-  font-weight: 500;
-}
-
 .text-\[\#101031\] {
   --tw-text-opacity: 1;
   color: rgb(16 16 49 / var(--tw-text-opacity));
@@ -1194,16 +1130,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[\#E2E8F0\] {
   --tw-text-opacity: 1;
   color: rgb(226 232 240 / var(--tw-text-opacity));
-}
-
-.text-gray-700 {
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
-}
-
-.text-gray-900 {
-  --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1350,6 +1276,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   .responsiveButtonClose.active {
     display: block;
   }
+
+  .container {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(6, auto);
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-areas: 
+            "grid1 grid2"
+            "grid3 grid4"
+            "grid5 grid6"
+            "grid7 grid8"
+            "grid9 grid10"
+            "grid11 none";
+    justify-items: center;
+    width: 356px;
+  }
 }
 
 @-webkit-keyframes showResponsiveMenu {
@@ -1371,6 +1313,112 @@ Ensure the default browser behavior of the `hidden` attribute.
     opacity: 1;
   }
 }
+
+/*.container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 32px;
+    grid-row-gap: 64px;
+    grid-template-areas: 
+        "grid1 grid2 grid3 none"
+        "grid4 grid5 grid6 grid7"
+        "grid8 grid9 grid10 grid11";
+    justify-items: center;
+    width: 1172px;
+    margin-left: 322px;
+}
+
+.team-card1 {
+    width: 293px;
+    height: 402px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(1, auto);
+    grid-column-gap: 32px;
+    grid-template-areas: 
+        "grid1 grid2 grid3 none";
+    justify-items: center;
+    width: 229px;
+    margin-left: 322px;
+    margin-bottom: 32px;
+} 
+
+.grid1 {
+    grid-area: grid1;
+}
+
+.grid2 {
+    grid-area: grid2;
+}
+
+.grid3 {
+    grid-area: grid3;
+}
+
+.grid4 {
+    grid-area: grid4;
+}
+
+.grid5 {
+    grid-area: grid5;
+}
+
+.grid6 {
+    grid-area: grid6;
+}
+
+.grid7 {
+    grid-area: grid7;
+}
+
+.grid8 {
+    grid-area: grid8;
+}
+
+.grid9 {
+    grid-area: grid9;
+}
+
+.grid10 {
+    grid-area: grid10;
+}
+
+.grid11 {
+    grid-area: grid11;
+} 
+
+@media only screen and (max-width: 412px) {
+    .team-card1 {
+        width: 178px;
+        height: 263px;
+    }
+
+    .team-card1 img {
+        width: 176px;
+        height: 170px;
+    }
+
+    .container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(6, auto);
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-areas: 
+        "grid1 grid2"
+        "grid3 grid4"
+        "grid5 grid6"
+        "grid7 grid8"
+        "grid9 grid10"
+        "grid11 none";
+    justify-items: center;
+    width: 356px;
+    }
+}*/
 
 .after\:absolute::after {
   content: var(--tw-content);
@@ -1476,10 +1524,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.group:hover .group-hover\:opacity-75 {
-  opacity: 0.75;
-}
-
 @media (max-width: 412px) {
   .sm\:absolute {
     position: absolute;
@@ -1537,6 +1581,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 83px;
   }
 
+  .sm\:mt-8 {
+    margin-top: 2rem;
+  }
+
   .sm\:mt-16 {
     margin-top: 4rem;
   }
@@ -1565,16 +1613,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-bottom: 4rem;
   }
 
-  .sm\:mt-8 {
-    margin-top: 2rem;
-  }
-
   .sm\:block {
     display: block;
   }
 
   .sm\:flex {
     display: flex;
+  }
+
+  .sm\:grid {
+    display: grid;
   }
 
   .sm\:hidden {
@@ -1655,10 +1703,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:w-\[90\%\] {
     width: 90%;
-  }
-
-  .sm\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sm\:flex-col {
